@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --black: #130f0d;
+    --primary: #fd951f;
+    --primary-dark: #dd7b0c;
+    --white: #f0f0f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+button,
+input {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    height: 10vh;
+    background-color: #dd7b0c;
+}
+
+.header__nav {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav__link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(239, 239, 239);
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.header__nav__link:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.header__nav__excluir {
+    border: none;
+    width: 270px;
+    height: 35px;
+
+    border-radius: 10px;
+    
+    text-transform: uppercase; 
+    font-size: 0.9rem;
+    font-weight: bold;
+    outline: none;
+    transition: 0.3s;
+}
+
+.header__nav__excluir:hover {
+    background-color: #C35355;
+    color: #fff;
+}
+
+.boxes {
+    width: 90%;
+    min-height: 100vh;
+
+    margin: 20px auto;
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.box {
+    width: calc(25% - 20px);
+    height: 320px;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.boxes__box__img__excluir {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    height: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #dd7b0c;
+    color: #fff;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.box:hover .boxes__box__img__excluir {
+    bottom: 0;
+    height: 40px;
+}
+

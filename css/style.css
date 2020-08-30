@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --black: #130f0d;
+    --primary: #fd951f;
+    --primary-dark: #dd7b0c;
+    --white: #f0f0f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+button,
+input {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+
+    background-color: var(--black);
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin: auto;
+    width: 90vw;
+}
+
+button {
+    width: 100%;
+    height: 10vh;
+
+    color: var(--white);
+
+    border: none;
+    background-color: var(--primary);
+    outline: none;
+    
+    position: relative;
+
+    transition: 0.3s;
+
+    text-transform: uppercase;
+    font-size: 2.4rem;
+}
+
+button:hover {
+    background: var(--primary-dark);
+}
+
+.images {
+    height: 80vh;
+    position: relative;
+}
+
+.images:hover::after,
+.images.fav::after {
+    content: ' \2605';
+    color: var(--primary);
+    font-size: 3.2rem;
+    
+    position: absolute;
+    top: 0;
+    left: 8px;
+}
+
+.images.fav:hover:after {
+    content: ' \2606';
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* caso a imagem não seja */
+}
+
+.favoritos {
+    height: 10vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dd7b0c;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.favoritos:hover {
+    color: #fff;
+    background-color: #333;
+}

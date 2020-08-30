@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/favoritos.css">
+
+    <title>Favoritos</title>
+</head>
+
+<!-- 
+    - Faça uma página para listar todas as imagens favoritas
+    - Para cada imagem, crie um botão 'deletar' para remover a imagem dos favoritos.
+    - Crie um botão de nome 'Remover todas' que irá apagar a chave 'favoritos' do localStorage, assim,
+    deletando todas as imagens favoritas.
+        - *Dica*: use o removeItem() para isso.
+-->
+
+<body>
+
+    <header>
+        <nav class="header__nav">
+            <a href="index.html" class="header__nav__link">+ Adicionar fotos</a>
+            <button class="header__nav__excluir" data-excluir-todos-fav>Excluir todos os favoritos</button>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="boxes">
+        </section>
+    </main>
+
+
+
+    <script src="./js/favoritos.js"></script>
+</body>
+
+</html>
