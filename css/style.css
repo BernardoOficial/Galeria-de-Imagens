@@ -61,7 +61,35 @@ button:hover {
     position: relative;
 }
 
-.images:hover::after,
+.images:hover::after {
+    content: " \2606";
+    color: var(--primary);
+    font-size: 3.2rem;
+    
+    position: absolute;
+    top: 0;
+    left: 8px;
+}
+
+.images::after {
+    content: " \2606";
+    color: var(--primary);
+    font-size: 3.2rem;
+    
+    position: absolute;
+    top: 0;
+    left: 8px;
+}
+
+.images.fav::after {
+    content: " \2605";
+}
+
+.images.fav:hover::after {
+    content: " \2605";
+}
+
+/* .images:hover::after,
 .images.fav::after {
     content: ' \2605';
     color: var(--primary);
@@ -74,7 +102,7 @@ button:hover {
 
 .images.fav:hover:after {
     content: ' \2606';
-}
+} */
 
 img {
     width: 100%;
