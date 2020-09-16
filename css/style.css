@@ -89,7 +89,9 @@ button:hover {
     content: " \2605";
 }
 
-/* .images:hover::after,
+/* Antiga maneira que estava
+
+.images:hover::after,
 .images.fav::after {
     content: ' \2605';
     color: var(--primary);
@@ -102,7 +104,9 @@ button:hover {
 
 .images.fav:hover:after {
     content: ' \2606';
-} */
+} 
+
+*/
 
 img {
     width: 100%;
